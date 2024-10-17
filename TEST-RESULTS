@@ -1,4 +1,7 @@
-Testirani izrazi:
+Sistemsko testiranje kalkulatora (black box)
+
+Test rezultati:
+
 1. 4 + 5 -> 9.0 (Uspešan test)
 2. 10 - 5 -> 5.0 (Uspešan test)
 3. 7 * 6 -> 42.0 (Uspešan test)
@@ -9,3 +12,26 @@ Testirani izrazi:
 8. 8 - 3 + 2 * 5 -> 15.0 (Uspešan test)
 9. 10 / 0 -> Infinity (Greška očekivana, trebalo bi da baci izuzetak)
 10. 10 + -> 10.0 (Očekivano je greška zbog nekompletnog izraza)
+
+Greške i zapažanja:
+- Test 1: Uspešno, rezultat 9.0 je tačan.
+- Test 2: Uspešno, rezultat 5.0 je tačan.
+- Test 3: Uspešno, rezultat 42.0 je tačan.
+- Test 4: Uspešno, rezultat 5.0 je tačan.
+- Test 5: Uspešno, rezultat 30.0 je tačan.
+- Test 6: Očekivani rezultat je 5.0, ali je dobijeno ERROR. Ovo je greška u implementaciji, kalkulator bi trebao pravilno da izračuna izraz.
+- Test 7: Očekivani rezultat je 20.0, ali je dobijeno ERROR. Ovo ukazuje na problem sa obradom izraza.
+- Test 8: Uspešno, rezultat 15.0 je tačan.
+- Test 9: Očekivano je "Infinity" zbog deljenja sa nulom, ali bi trebalo da baci izuzetak umesto toga. Ovo predstavlja nedostatak u obezbeđivanju.
+- Test 10: Očekivano je ERROR zbog nekompletnog izraza, ali je dobijeno 10.0. Ovo je greška u validaciji izraza.
+
+Zaključak
+Na osnovu testiranja, uočene su sledeće greške, nedostaci i propusti:
+
+Greške u izvođenju izraza sa zagradama: Izrazi poput (3 - 2) * 5 i (3 + 2) * 4 vraćaju grešku umesto očekivanih rezultata.
+
+Greška prilikom deljenja sa nulom: Umesto da baci izuzetak, kalkulator vraća Infinity, što nije ispravno ponašanje.
+
+Nekompletni izrazi: Kada se unese nekompletan izraz kao što je 10 +, kalkulator vraća rezultat 10.0 umesto da prijavi grešku, što može zbuniti korisnika.
+
+Ove greške bi trebalo da se isprave kako bi se poboljšala tačnost i korisničko iskustvo kalkulatora.
