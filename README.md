@@ -1,4 +1,13 @@
-### Izveštaj: Neformalni pregled koda i statička analiza
+# Izveštaj
+
+## Metrika LOC (Lines of Code)
+- **Ukupno fajlova**: 2
+- **Ukupno linija koda**: 148
+- **Ukupno komentara**: 5
+- **Ukupno praznih linija**: 61
+- **Ukupno linija (sve)**: 214
+
+## Neformalni pregled koda i statička analiza
 
 ### Fajl: `Calculator.java`
 - **Linija 3** – Preporučuje se dodavanje komentara o svrsi `import Scanner` klase, kako bi se olakšalo razumevanje načina na koji se koristi unos korisnika.
@@ -25,4 +34,5 @@
 - Move this file to a named package.
 - Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.
 - Replace this use of System.out by a logger.
+
 
