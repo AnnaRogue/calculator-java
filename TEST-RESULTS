@@ -1,0 +1,11 @@
+Testirani izrazi:
+1. 4 + 5 -> 9.0 (Uspešan test)
+2. 10 - 5 -> 5.0 (Uspešan test)
+3. 7 * 6 -> 42.0 (Uspešan test)
+4. 15 / 3 -> 5.0 (Uspešan test)
+5. 10 + 5 * 4 -> 30.0 (Uspešan test)
+6. (3 - 2) * 5 -> ERROR (Očekivano je 5.0)
+7. (3 + 2) * 4 -> ERROR (Očekivano je 20.0)
+8. 8 - 3 + 2 * 5 -> 15.0 (Uspešan test)
+9. 10 / 0 -> Infinity (Greška očekivana, trebalo bi da baci izuzetak)
+10. 10 + -> 10.0 (Očekivano je greška zbog nekompletnog izraza)
